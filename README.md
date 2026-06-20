@@ -1,26 +1,25 @@
 # Enjoyment Scroler
 
-Experiential scrolling prototype for AnarchI Technologies product exploration.
+Public-safe scroll-session scoring prototype for AnarchI Technologies.
 
 Hardcoding freedom into the systems of tomorrow.
 
 ## Purpose
 
-Enjoyment Scroler is a lightweight prototype for studying engagement, pacing, and interaction loops. It belongs in the public portfolio as an experiment, not as a claimed production product.
+Enjoyment Scroler studies pacing and engagement without webcam capture, social automation, or platform actions. It converts synthetic scroll events into deterministic recommendations.
 
-## Current Structure
+## What Changed
 
-```text
-.
-└── agent.py
+- Removed webcam, Reddit, and auto-join automation.
+- Added a tested scroll-session scoring engine.
+- Added three-phase tests: no session, healthy session, skip-heavy fatigue.
+
+## Verify
+
+```bash
+python -m unittest discover -s tests -q
 ```
 
-## Scope
+## Public Safety
 
-- Explore scroll-driven interaction behavior.
-- Test small engagement loops and response patterns.
-- Capture ideas that may later move into a richer interface.
-
-## Production Direction
-
-The next step is to define the actual user experience, add a minimal UI, and decide whether this prototype belongs as a product surface or as research inside another repo.
+Do not commit biometric capture, browser automation against third-party platforms, private browsing data, or engagement manipulation logic.
